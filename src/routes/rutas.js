@@ -71,6 +71,7 @@ router.put('/productos/actualizar/:id', (req, res) => {
 router.delete('/productos/borrar/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const producto = miProducto2.borrar(id);
+    
     if (producto == 'outOfRange'){
         return res.status(400).json({
           msg: 'indice fuera de rango',

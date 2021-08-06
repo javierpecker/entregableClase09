@@ -1,8 +1,6 @@
 import express from 'express';
-import Producto from './productos';
 import path from 'path';
-//import routerSave from './routes/save.js';
-import routerRead from './routes/read.js';
+import routerRead from './routes/rutas.js';
 
 const app = express();
 const puerto = 8080;
